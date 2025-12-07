@@ -29,10 +29,11 @@ def main():
     recommendations = matcher.match(resume, args.candidate_id)
 
     output = {
-        "candidate_id": args.candidate_id,
-        "candidate_name": resume.basics.name,
-        "recommendations": [rec.dict() for rec in recommendations]
-    }
+    "candidate_id": args.candidate_id,
+    "candidate_name": resume.basics.name,
+    "recommendations": [rec.model_dump() for rec in recommendations.recommendations]
+    # Use .model_dump() on each Pydantic model
+}
 
     if args.output:
         with open(args.output, 'w') as f:

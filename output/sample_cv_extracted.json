@@ -1,0 +1,233 @@
+{
+  "basics": {
+    "name": "Sachin Kafle",
+    "label": null,
+    "image": null,
+    "email": "envel\u2322pesachinkafle365@gmail.com",
+    "phone": "+9779840559714",
+    "url": null,
+    "summary": null,
+    "location": null,
+    "profiles": []
+  },
+  "work": [
+    {
+      "name": "Blys",
+      "position": "AI Engineer",
+      "url": null,
+      "startDate": "2025-02",
+      "endDate": "Present",
+      "summary": "Developed a customer-facing chatbot for client and therapist interactions. Integrating a video generation model to automatically create dynamic bios of massage providers from images and user prompts.",
+      "highlights": [
+        "Led the AI team, and automated the massage booking workflow by building AI agents (using CrewAI) to fill out booking forms and assist massage clients.",
+        "Performance: 60 queries resolved per hour (previously 15 queries per hour resolved by customer experience team).",
+        "API workload reduced by 30 requests per second implementing agentic booking flow."
+      ]
+    },
+    {
+      "name": "The Partnership Law Firm",
+      "position": "Machine Learning Engineer",
+      "url": null,
+      "startDate": "2023-09",
+      "endDate": "2024-02",
+      "summary": "Implementation of OCR based tools using Keras API on thousands of scanned law firm documents and extraction of important parts such as Matter Number, Client Names and Property addresses (NER) modeling.",
+      "highlights": [
+        "Implemented RAG LLM models for resolving hundreds of legal enquiries.",
+        "Technology Used: Fine-tuned Microsoft LayoutLM model, pyspark and MongoDB, Azure Data Factory and Databricks."
+      ]
+    },
+    {
+      "name": "Varosa Technology",
+      "position": "Computer Vision Researcher",
+      "url": null,
+      "startDate": "2021-12",
+      "endDate": "2023-03",
+      "summary": "Trained custom Keras-OCR to convert images and scanned medical documents into editable, searchable text, supporting multiple languages and handwriting.",
+      "highlights": [
+        "Employed NLP and vision-language models (VLMs) to detect key entities (names, dates, amounts, addresses) and automatically filled the form and provided summaries to the patients.",
+        "Technology Used: Keras-OCR, AWS Textract, OpenCV, Transformers, Huggingface, CNN, LSTM model."
+      ]
+    },
+    {
+      "name": "Tribhuvan University and Herald College",
+      "position": "Lecturer And Supervisor",
+      "url": null,
+      "startDate": "2019-12",
+      "endDate": "2022-02",
+      "summary": "Lecturer of Programming with Python, Machine Learning and Artificial Intelligence and Big data.",
+      "highlights": [
+        "Visiting lecturer and supervisor at Herald College.",
+        "Supervised 20+ Bachelor thesis projects on Computer Vision: Pose estimation, object detection, deepfake detection and Natural Language processing projects."
+      ]
+    },
+    {
+      "name": "Perceive Now",
+      "position": "Big Data Engineer | ML Engineer",
+      "url": null,
+      "startDate": "2019-09",
+      "endDate": "2020-12",
+      "summary": "Implemented AWS OpenSearch for searching and locating 3TB worth of ORCID, uspto & Crossref\u2019s data.",
+      "highlights": [
+        "Improved database search speed by 4.x using Python, AWS Lambda and MongoDB Cache.",
+        "Similarity check and Summarization based on User\u2019s history (Collaborative Recommendation)."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "School of Mathematical Science, Tribhuvan University",
+      "url": null,
+      "area": "Data Science",
+      "studyType": "Master\u2019s",
+      "startDate": "2020-01",
+      "endDate": "2022-01",
+      "score": "3.71",
+      "courses": []
+    },
+    {
+      "institution": "Advanced College of Engineering & Management",
+      "url": null,
+      "area": "Computer Engineering",
+      "studyType": "Bachelor\u2019s",
+      "startDate": "2014-01",
+      "endDate": "2018-01",
+      "score": "74.08%",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [
+    {
+      "name": "Learning Python by Building games",
+      "publisher": "Packt Publishing, Amazon Prime",
+      "releaseDate": null,
+      "url": null,
+      "summary": "Reviewer: Prof. Dr. Subarna Shakya, Jose Angel Munoz."
+    },
+    {
+      "name": "Can LLM detect deepfakes? A multi-modal analysis using state-of-the-art language models",
+      "publisher": null,
+      "releaseDate": "2025-07",
+      "url": "10.13140/RG.2.2.14153.25447",
+      "summary": null
+    },
+    {
+      "name": "Comparative Analysis of Parametric, Semi-Parametric and Non-Parametric Methods on Real-Estate Data of the Kathmandu Valley",
+      "publisher": "IJRAMT",
+      "releaseDate": "2025-01",
+      "url": null,
+      "summary": "vol. 6, no. 1, pp. 40\u201343."
+    },
+    {
+      "name": "Metropolis Hasting and Choleski Approach: A case of Simulating Bivariate Normal Distribution",
+      "publisher": "TechRxiv",
+      "releaseDate": "2025-04-18",
+      "url": null,
+      "summary": null
+    },
+    {
+      "name": "Vehicle Monitoring System using Internet of Things in Nepal",
+      "publisher": "IJRET",
+      "releaseDate": "2019-09",
+      "url": null,
+      "summary": "Volume 6, Issue 9, S.N. 120."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "level": null,
+      "keywords": [
+        "OCR",
+        "NER modeling",
+        "RAG LLM models",
+        "Keras API",
+        "Microsoft LayoutLM",
+        "pyspark",
+        "MongoDB",
+        "Azure Data Factory",
+        "Databricks"
+      ]
+    },
+    {
+      "name": "Computer Vision",
+      "level": null,
+      "keywords": [
+        "Keras-OCR",
+        "NLP",
+        "vision-language models",
+        "OpenCV",
+        "Transformers",
+        "Huggingface",
+        "CNN",
+        "LSTM"
+      ]
+    },
+    {
+      "name": "Big Data",
+      "level": null,
+      "keywords": [
+        "AWS OpenSearch",
+        "Python",
+        "AWS Lambda",
+        "MongoDB Cache"
+      ]
+    },
+    {
+      "name": "Teaching",
+      "level": null,
+      "keywords": [
+        "Programming with Python",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Big Data"
+      ]
+    }
+  ],
+  "languages": [],
+  "interests": [],
+  "references": [
+    {
+      "name": "Prof. Dr. Narayan Pd Adhikari",
+      "reference": "School of Mathematical Sciences, Tribhuvan University, Email: narayan.adhikari@cdp.tu.edu.np"
+    },
+    {
+      "name": "Ass. Prof. Nawaraj Paudel",
+      "reference": "Director, School of Mathematical Sciences, Tribhuvan University, Email: nawarajpaudel@cdcsit.edu.np"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Evolutionary Timetable Scheduling",
+      "startDate": "2022-01",
+      "endDate": null,
+      "description": "Addresses the timetable scheduling problem specific to the School Of Mathematical Sciences, TU. The proposed solution utilizes a hybrid technique that merges a 1+1 evolutionary strategy with shotgun hill-climbing.",
+      "highlights": [
+        "Alternative methods like simulated annealing and a classical genetic algorithm were also considered and tested, but they did not outperform the chosen hybrid approach."
+      ],
+      "url": null
+    },
+    {
+      "name": "Physics Informed Full body Deepfake Detection",
+      "startDate": "2025-01",
+      "endDate": "Present",
+      "description": "Proposed a Deepfake Detection approach that combines physics-informed neural networks (PINNs) with convolutional neural networks (CNNs) to enhance detection accuracy.",
+      "highlights": [
+        "Incorporating physical principles of image manipulation, such as light behavior and texture distortion, into the model\u2019s training improves robustness against adversarial attacks and data variability."
+      ],
+      "url": null
+    },
+    {
+      "name": "Cyber Security Awareness Program for Nepal Police",
+      "startDate": "2019-01",
+      "endDate": null,
+      "description": "Conducted cybersecurity awareness training for Nepal Police, covering topics such as phishing, social engineering toolkit, website SQL injection attacks, and deepfake detection.",
+      "highlights": [
+        "This training was carried out under the supervision of Prof. Dr. Subarna Shakya."
+      ],
+      "url": null
+    }
+  ]
+}
