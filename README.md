@@ -119,7 +119,7 @@ An intelligent resume parsing and job recommendation system built with **LangGra
 
 **1. Clone Repository**
 
-git clone #url of this repository
+git clone https://github.com/sachinkafle/Jobins-CV-recommendation-tasks.git
 cd cv-job-matching-system
 
 
