@@ -1,0 +1,45 @@
+{
+  "candidate_id": "10553553",
+  "candidate_name": "Not Provided",
+  "recommendations": [
+    {
+      "job_id": "job_059",
+      "job_title": "DevOps Engineer",
+      "company": "Tech Corp",
+      "match_score": 0.64,
+      "matching_factors": {
+        "skills_match": 0.3,
+        "experience_match": 0.9,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "AWS",
+        "NoSQL"
+      ],
+      "explanation": "The candidate has extensive IT management experience and a strong educational background in relevant fields, which aligns well with the experience and education requirements for a DevOps Engineer. However, the candidate lacks specific skills in AWS and NoSQL, which are critical for the role, resulting in a lower skills match score."
+    },
+    {
+      "job_id": "job_019",
+      "job_title": "Backend Developer",
+      "company": "Tech Corp",
+      "match_score": 0.42,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.8,
+        "education_match": 0.5,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "Node.js",
+        "Git"
+      ],
+      "explanation": "This candidate is not a good match for the Backend Developer position as they lack the specific technical skills required, such as JavaScript, Node.js, and Git. However, they have extensive IT management experience, which aligns with the experience requirement, and their educational background in Business Information Technology is somewhat relevant."
+    }
+  ]
+}

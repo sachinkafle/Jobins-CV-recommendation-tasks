@@ -1,0 +1,224 @@
+{
+  "candidate_id": "41344156",
+  "candidate_name": "VP OF INFORMATION TECHNOLOGY",
+  "recommendations": [
+    {
+      "job_id": "job_077",
+      "job_title": "DevOps Engineer",
+      "company": "Cloud Solutions",
+      "match_score": 0.62,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.8,
+        "education_match": 0.5,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "AWS",
+        "React",
+        "Python"
+      ],
+      "explanation": "The candidate has strong IT leadership experience and SQL skills, which are relevant to the DevOps role. However, they lack key technical skills in AWS, React, and Python, which are critical for this position."
+    },
+    {
+      "job_id": "job_067",
+      "job_title": "Senior Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.57,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.8,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "React",
+        "Docker",
+        "Kubernetes",
+        "JavaScript"
+      ],
+      "explanation": "The candidate has extensive IT experience and a strong background in SQL, which is relevant to the job. However, they lack the specific technical skills required for the Senior Engineer position, particularly in React, Docker, Kubernetes, and JavaScript."
+    },
+    {
+      "job_id": "job_086",
+      "job_title": "DevOps Engineer",
+      "company": "Enterprise Tech",
+      "match_score": 0.56,
+      "matching_factors": {
+        "skills_match": 0.4,
+        "experience_match": 0.5,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "CI/CD",
+        "Docker",
+        "Java",
+        "Node.js",
+        "React",
+        "Kubernetes"
+      ],
+      "explanation": "The candidate has a strong background in IT leadership and relevant experience, but lacks key technical skills required for the DevOps Engineer role, particularly in CI/CD, Docker, and modern programming languages like Java and Node.js."
+    },
+    {
+      "job_id": "job_087",
+      "job_title": "DevOps Engineer",
+      "company": "Enterprise Tech",
+      "match_score": 0.51,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.8,
+        "education_match": 0.5,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "CI/CD",
+        "Docker",
+        "Java",
+        "AWS",
+        "Python",
+        "TensorFlow"
+      ],
+      "explanation": "The candidate has significant experience in IT leadership and possesses SQL skills, which is relevant to the DevOps role. However, they lack key technical skills such as CI/CD, Docker, and programming languages like Java and Python, which are critical for the position."
+    },
+    {
+      "job_id": "job_022",
+      "job_title": "Product Manager",
+      "company": "Tech Corp",
+      "match_score": 0.45,
+      "matching_factors": {
+        "skills_match": 0.28,
+        "experience_match": 0.83,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Git",
+        "TensorFlow",
+        "Node.js",
+        "React",
+        "CI/CD",
+        "AWS"
+      ],
+      "explanation": "The candidate has strong experience in IT leadership and possesses SQL skills, which partially align with the job requirements. However, they lack several key technical skills and relevant experience in product management, making this a less than ideal match."
+    },
+    {
+      "job_id": "job_059",
+      "job_title": "DevOps Engineer",
+      "company": "Tech Corp",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "AWS",
+        "NoSQL"
+      ],
+      "explanation": "The candidate has strong SQL skills, but lacks experience with AWS and NoSQL, which are critical for the DevOps Engineer role. Additionally, the candidate's extensive experience in IT leadership does not align with the specific technical focus and experience level required for this position."
+    },
+    {
+      "job_id": "job_003",
+      "job_title": "Senior Engineer",
+      "company": "Future Labs",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Python",
+        "NoSQL",
+        "Git"
+      ],
+      "explanation": "The candidate has strong experience in IT leadership and SQL, but lacks the specific technical skills required for the Senior Engineer position, such as Python, NoSQL, and Git. Additionally, the candidate's extensive experience does not align with the 4+ years requirement for this specific engineering role."
+    },
+    {
+      "job_id": "job_057",
+      "job_title": "DevOps Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.22,
+      "matching_factors": {
+        "skills_match": 0.33,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Kubernetes"
+      ],
+      "explanation": "The candidate has strong experience in IT leadership and SQL, but lacks the specific technical skills in JavaScript and Kubernetes required for the DevOps Engineer role, as well as the relevant experience in a DevOps capacity."
+    },
+    {
+      "job_id": "job_032",
+      "job_title": "Product Manager",
+      "company": "Digital Dynamics",
+      "match_score": 0.17,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Python",
+        "CI/CD",
+        "Node.js"
+      ],
+      "explanation": "The candidate has strong experience in IT leadership and possesses SQL skills, but lacks the specific technical skills and experience required for the Product Manager role, such as JavaScript, Python, CI/CD, and Node.js."
+    },
+    {
+      "job_id": "job_064",
+      "job_title": "Senior Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "AWS",
+        "CI/CD",
+        "Docker"
+      ],
+      "explanation": "This candidate is not a good match for the Senior Engineer position as they lack the required technical skills in Java, AWS, CI/CD, and Docker, and their experience does not align with the specific requirements of the role."
+    }
+  ]
+}

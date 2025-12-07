@@ -1,0 +1,188 @@
+{
+  "test_configuration": {
+    "target_cvs": 100,
+    "actual_cvs": 20,
+    "max_workers": 10
+  },
+  "processing_performance": {
+    "total_cvs": 20,
+    "successful": 20,
+    "failed": 0,
+    "total_time_seconds": 321.31,
+    "avg_parsing_time_seconds": 39.095,
+    "avg_matching_time_seconds": 28.528,
+    "throughput_cvs_per_minute": 3.73,
+    "results": [
+      {
+        "candidate_id": "39718499",
+        "success": true,
+        "parsing_time": 21.129,
+        "matching_time": 26.364,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "37764298",
+        "success": true,
+        "parsing_time": 25.295,
+        "matching_time": 24.894,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "36856210",
+        "success": true,
+        "parsing_time": 27.145,
+        "matching_time": 26.207,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "40018190",
+        "success": true,
+        "parsing_time": 27.774,
+        "matching_time": 27.167,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "41344156",
+        "success": true,
+        "parsing_time": 29.155,
+        "matching_time": 27.265,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "35325329",
+        "success": true,
+        "parsing_time": 31.99,
+        "matching_time": 25.876,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "39413067",
+        "success": true,
+        "parsing_time": 33.562,
+        "matching_time": 25.793,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "37242217",
+        "success": true,
+        "parsing_time": 32.44,
+        "matching_time": 28.999,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "36434348",
+        "success": true,
+        "parsing_time": 34.616,
+        "matching_time": 27.61,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "38753827",
+        "success": true,
+        "parsing_time": 52.579,
+        "matching_time": 27.37,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "46260230",
+        "success": true,
+        "parsing_time": 27.467,
+        "matching_time": 27.563,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "52246737",
+        "success": true,
+        "parsing_time": 16.726,
+        "matching_time": 29.823,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "51363762",
+        "success": true,
+        "parsing_time": 23.937,
+        "matching_time": 29.079,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "66832845",
+        "success": true,
+        "parsing_time": 14.824,
+        "matching_time": 33.976,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "52618188",
+        "success": true,
+        "parsing_time": 22.39,
+        "matching_time": 30.839,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "51639418",
+        "success": true,
+        "parsing_time": 25.834,
+        "matching_time": 30.326,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "48037995",
+        "success": true,
+        "parsing_time": 32.089,
+        "matching_time": 31.098,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "57002858",
+        "success": true,
+        "parsing_time": 34.528,
+        "matching_time": 31.495,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "sample_resume",
+        "success": true,
+        "parsing_time": 37.484,
+        "matching_time": 29.916,
+        "num_recommendations": 10,
+        "error": null
+      },
+      {
+        "candidate_id": "64017585",
+        "success": true,
+        "parsing_time": 230.931,
+        "matching_time": 28.892,
+        "num_recommendations": 10,
+        "error": null
+      }
+    ]
+  },
+  "database_performance": {
+    "avg_parsing_time_seconds": 39.095,
+    "avg_recommendation_time_seconds": 28.528,
+    "avg_search_time_seconds": 1.26,
+    "throughput_cvs_per_minute": 1.53,
+    "cache_hit_rate": 0,
+    "total_cvs_processed": 20,
+    "total_recommendations_generated": 20,
+    "total_searches": 20
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "candidate_id": "39718499",
+  "candidate_name": "Assistant Football Coach",
+  "recommendations": [
+    {
+      "job_id": "job_032",
+      "job_title": "Product Manager",
+      "company": "Digital Dynamics",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "SQL",
+        "JavaScript",
+        "Python",
+        "CI/CD",
+        "Node.js"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in software development. Their background in business and marketing does not align with the specific requirements of this role."
+    },
+    {
+      "job_id": "job_031",
+      "job_title": "Product Manager",
+      "company": "Future Labs",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "Node.js",
+        "SQL",
+        "Python",
+        "JavaScript",
+        "Git",
+        "Docker"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in software development. Their background in business and marketing does not align with the job requirements."
+    },
+    {
+      "job_id": "job_049",
+      "job_title": "Product Manager",
+      "company": "Future Labs",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Git",
+        "SQL",
+        "PyTorch",
+        "NoSQL",
+        "Node.js"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in product management. Their background in business and marketing does not align with the specific requirements of the role."
+    },
+    {
+      "job_id": "job_019",
+      "job_title": "Backend Developer",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "Node.js",
+        "Git",
+        "8+ years experience"
+      ],
+      "explanation": "This candidate is not a good match for the Backend Developer position as they lack the required technical skills and relevant experience in software development."
+    },
+    {
+      "job_id": "job_003",
+      "job_title": "Senior Engineer",
+      "company": "Future Labs",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Python",
+        "SQL",
+        "NoSQL",
+        "Git"
+      ],
+      "explanation": "This candidate is not a good match for the Senior Engineer position as they lack the required technical skills and relevant experience in engineering. Their background is primarily in coaching and management, which does not align with the job requirements."
+    },
+    {
+      "job_id": "job_005",
+      "job_title": "Frontend Developer",
+      "company": "Enterprise Tech",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "SQL",
+        "Java",
+        "Kubernetes"
+      ],
+      "explanation": "This candidate is not a good match for the Frontend Developer position as they lack the required technical skills and relevant experience in software development."
+    },
+    {
+      "job_id": "job_022",
+      "job_title": "Product Manager",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "SQL",
+        "Git",
+        "TensorFlow",
+        "Node.js",
+        "React",
+        "CI/CD",
+        "AWS"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience. Their background in business and marketing does not align with the specific demands of the role."
+    },
+    {
+      "job_id": "job_084",
+      "job_title": "Frontend Developer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "NoSQL",
+        "SQL",
+        "JavaScript",
+        "PyTorch"
+      ],
+      "explanation": "This candidate is not a good match for the Frontend Developer position as they lack the required technical skills and relevant experience in software development."
+    },
+    {
+      "job_id": "job_027",
+      "job_title": "Backend Developer",
+      "company": "Cloud Solutions",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "CI/CD",
+        "PyTorch",
+        "Node.js",
+        "Git",
+        "NoSQL"
+      ],
+      "explanation": "This candidate is not a good match for the Backend Developer position as they lack the required technical skills and relevant experience in software development."
+    },
+    {
+      "job_id": "job_033",
+      "job_title": "Backend Developer",
+      "company": "StartupXYZ",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "Node.js",
+        "CI/CD",
+        "Git"
+      ],
+      "explanation": "This candidate is not a good match for the Backend Developer position as they lack the required technical skills and relevant experience in software development."
+    }
+  ]
+}

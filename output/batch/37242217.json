@@ -1,0 +1,222 @@
+{
+  "candidate_id": "37242217",
+  "candidate_name": "Information Technology Consultant",
+  "recommendations": [
+    {
+      "job_id": "job_067",
+      "job_title": "Senior Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.63,
+      "matching_factors": {
+        "skills_match": 0.4,
+        "experience_match": 0.75,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "JavaScript",
+        "SQL"
+      ],
+      "missing_skills": [
+        "React",
+        "Docker",
+        "Kubernetes"
+      ],
+      "explanation": "The candidate has a strong background in information technology with relevant experience and education, but lacks key skills in React, Docker, and Kubernetes which are essential for the Senior Engineer role."
+    },
+    {
+      "job_id": "job_048",
+      "job_title": "Backend Developer",
+      "company": "Tech Corp",
+      "match_score": 0.62,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.6,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "JavaScript",
+        "SQL"
+      ],
+      "missing_skills": [
+        "Node.js",
+        "AWS",
+        "Docker",
+        "NoSQL"
+      ],
+      "explanation": "The candidate has a strong background in information technology with relevant skills in JavaScript and SQL, but lacks experience with key backend technologies such as Node.js, AWS, Docker, and NoSQL, which are critical for the role."
+    },
+    {
+      "job_id": "job_019",
+      "job_title": "Backend Developer",
+      "company": "Tech Corp",
+      "match_score": 0.51,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.75,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "JavaScript"
+      ],
+      "missing_skills": [
+        "Node.js",
+        "Git"
+      ],
+      "explanation": "The candidate has strong experience in technology and project management, with a solid foundation in JavaScript, but lacks specific experience with Node.js and Git, which are critical for the Backend Developer role."
+    },
+    {
+      "job_id": "job_086",
+      "job_title": "DevOps Engineer",
+      "company": "Enterprise Tech",
+      "match_score": 0.45,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "Java",
+        "SQL"
+      ],
+      "missing_skills": [
+        "CI/CD",
+        "Docker",
+        "Node.js",
+        "React",
+        "Kubernetes"
+      ],
+      "explanation": "The candidate has a strong background in information technology with relevant skills in Java and SQL, but lacks key DevOps skills such as CI/CD, Docker, Node.js, React, and Kubernetes. Additionally, while the candidate has extensive experience, it does not meet the specific requirement of 6+ years in a DevOps role."
+    },
+    {
+      "job_id": "job_059",
+      "job_title": "DevOps Engineer",
+      "company": "Tech Corp",
+      "match_score": 0.37,
+      "matching_factors": {
+        "skills_match": 0.3,
+        "experience_match": 0.0,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "AWS",
+        "NoSQL"
+      ],
+      "explanation": "The candidate has a strong background in information technology and relevant skills in SQL, but lacks experience with AWS and NoSQL, which are critical for the DevOps Engineer role. Additionally, the candidate has over 18 years of experience, but it does not align with the specific 6+ years of DevOps-related experience required."
+    },
+    {
+      "job_id": "job_005",
+      "job_title": "Frontend Developer",
+      "company": "Enterprise Tech",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "Java",
+        "SQL"
+      ],
+      "missing_skills": [
+        "Kubernetes"
+      ],
+      "explanation": "The candidate has strong technical skills in Java and SQL, which are relevant to the Frontend Developer position. However, they lack the required experience in Kubernetes and do not meet the minimum experience requirement, making this a poor match overall."
+    },
+    {
+      "job_id": "job_100",
+      "job_title": "Backend Developer",
+      "company": "Data Systems Inc",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "JavaScript",
+        "Java"
+      ],
+      "missing_skills": [
+        "NoSQL",
+        "Python",
+        "PyTorch",
+        "AWS",
+        "CI/CD"
+      ],
+      "explanation": "The candidate has relevant skills in Java and JavaScript, but lacks critical backend development skills such as NoSQL, Python, and AWS. Additionally, the candidate does not meet the 3+ years of specific backend development experience required for the role."
+    },
+    {
+      "job_id": "job_033",
+      "job_title": "Backend Developer",
+      "company": "StartupXYZ",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "JavaScript"
+      ],
+      "missing_skills": [
+        "Node.js",
+        "CI/CD",
+        "Git"
+      ],
+      "explanation": "The candidate has strong experience in JavaScript, which is a key requirement for the Backend Developer role, but lacks the specific experience with Node.js, CI/CD, and Git. Additionally, the candidate does not meet the minimum experience requirement of 3 years in a relevant backend development role."
+    },
+    {
+      "job_id": "job_064",
+      "job_title": "Senior Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.18,
+      "matching_factors": {
+        "skills_match": 0.25,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "Java"
+      ],
+      "missing_skills": [
+        "AWS",
+        "CI/CD",
+        "Docker"
+      ],
+      "explanation": "The candidate has strong experience in Java, which is a requirement for the position, but lacks the necessary experience with AWS, CI/CD, and Docker. Additionally, the candidate has over 18 years of experience, but it does not align with the specific requirements of the Senior Engineer role."
+    },
+    {
+      "job_id": "job_003",
+      "job_title": "Senior Engineer",
+      "company": "Future Labs",
+      "match_score": 0.17,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Python",
+        "NoSQL",
+        "Git"
+      ],
+      "explanation": "The candidate has extensive experience in IT and some relevant skills like SQL, but lacks the specific technical skills required for the Senior Engineer position, such as Python, NoSQL, and Git. Additionally, the candidate does not meet the minimum experience requirement of 4 years in a relevant role."
+    }
+  ]
+}

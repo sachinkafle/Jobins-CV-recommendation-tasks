@@ -1,0 +1,220 @@
+{
+  "candidate_id": "48037995",
+  "candidate_name": "STAFF PHARMACIST",
+  "recommendations": [
+    {
+      "job_id": "job_031",
+      "job_title": "Product Manager",
+      "company": "Future Labs",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "Node.js",
+        "SQL",
+        "Python",
+        "JavaScript",
+        "Git",
+        "Docker"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in software development. Their background in pharmacy does not align with the job requirements."
+    },
+    {
+      "job_id": "job_066",
+      "job_title": "Product Manager",
+      "company": "StartupXYZ",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "Docker",
+        "Kubernetes"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills in Java, Docker, and Kubernetes, and their experience is primarily in pharmacy rather than product management."
+    },
+    {
+      "job_id": "job_064",
+      "job_title": "Senior Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "AWS",
+        "CI/CD",
+        "Docker"
+      ],
+      "explanation": "This candidate is not a good match for the Senior Engineer position as they lack the required technical skills in software development and cloud technologies, as well as the relevant experience in engineering roles."
+    },
+    {
+      "job_id": "job_052",
+      "job_title": "Product Manager",
+      "company": "Enterprise Tech",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "TensorFlow",
+        "Java",
+        "Node.js",
+        "CI/CD",
+        "AWS"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in software development and product management."
+    },
+    {
+      "job_id": "job_089",
+      "job_title": "Product Manager",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Docker",
+        "Python",
+        "JavaScript",
+        "CI/CD",
+        "Java",
+        "React"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in software development. Their background in pharmacy does not align with the job requirements."
+    },
+    {
+      "job_id": "job_032",
+      "job_title": "Product Manager",
+      "company": "Digital Dynamics",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "SQL",
+        "JavaScript",
+        "Python",
+        "CI/CD",
+        "Node.js"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in software development. Their background in pharmacy does not align with the job requirements."
+    },
+    {
+      "job_id": "job_081",
+      "job_title": "Senior Engineer",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Docker",
+        "JavaScript",
+        "Node.js",
+        "NoSQL",
+        "Python",
+        "AWS"
+      ],
+      "explanation": "This candidate is not a good match for the Senior Engineer position as they lack the required technical skills and relevant experience in software engineering. Their background is primarily in pharmacy, which does not align with the job requirements."
+    },
+    {
+      "job_id": "job_022",
+      "job_title": "Product Manager",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "SQL",
+        "Git",
+        "TensorFlow",
+        "Node.js",
+        "React",
+        "CI/CD",
+        "AWS"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in software development and product management."
+    },
+    {
+      "job_id": "job_067",
+      "job_title": "Senior Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "React",
+        "Docker",
+        "Kubernetes",
+        "JavaScript",
+        "SQL"
+      ],
+      "explanation": "This candidate is not a good match for the Senior Engineer position as they possess a background in pharmacy rather than engineering, and they lack the required technical skills and experience in software development."
+    },
+    {
+      "job_id": "job_049",
+      "job_title": "Product Manager",
+      "company": "Future Labs",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Git",
+        "SQL",
+        "PyTorch",
+        "NoSQL",
+        "Node.js"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in product management. Their background in pharmacy does not align with the job requirements."
+    }
+  ]
+}

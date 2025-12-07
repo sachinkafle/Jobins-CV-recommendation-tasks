@@ -1,0 +1,209 @@
+{
+  "candidate_id": "36856210",
+  "candidate_name": "Information Assurance Professional",
+  "recommendations": [
+    {
+      "job_id": "job_064",
+      "job_title": "Senior Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "AWS",
+        "CI/CD",
+        "Docker"
+      ],
+      "explanation": "This candidate does not match the job requirements as they lack the necessary technical skills in Java, AWS, CI/CD, and Docker, and their experience does not align with the specific requirements of the Senior Engineer role."
+    },
+    {
+      "job_id": "job_004",
+      "job_title": "ML Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "NoSQL",
+        "CI/CD"
+      ],
+      "explanation": "This candidate does not match the job requirements for the ML Engineer position, as they lack the necessary technical skills in Java, NoSQL, and CI/CD, and do not have relevant experience in machine learning or related fields."
+    },
+    {
+      "job_id": "job_073",
+      "job_title": "ML Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Node.js",
+        "SQL",
+        "AWS"
+      ],
+      "explanation": "This candidate does not possess the required technical skills or relevant experience for the ML Engineer position, as they lack expertise in Node.js, SQL, and AWS, which are critical for the role."
+    },
+    {
+      "job_id": "job_045",
+      "job_title": "ML Engineer",
+      "company": "Cloud Solutions",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Node.js",
+        "SQL",
+        "Docker",
+        "Python",
+        "Git",
+        "AWS"
+      ],
+      "explanation": "This candidate does not possess any of the required technical skills for the ML Engineer position, nor do they have the relevant experience or educational background in machine learning or related fields. Therefore, they are not a suitable match for this role."
+    },
+    {
+      "job_id": "job_020",
+      "job_title": "AI Researcher",
+      "company": "StartupXYZ",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "AWS",
+        "SQL",
+        "Node.js",
+        "Python",
+        "Java",
+        "React"
+      ],
+      "explanation": "This candidate is not a good match for the AI Researcher position as they lack the required technical skills and relevant experience in programming and cloud technologies."
+    },
+    {
+      "job_id": "job_044",
+      "job_title": "Senior Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "React",
+        "AWS",
+        "JavaScript"
+      ],
+      "explanation": "This candidate does not match the job requirements as they lack the necessary technical skills in React, AWS, and JavaScript, and their experience does not align with the specific requirements of the Senior Engineer role."
+    },
+    {
+      "job_id": "job_098",
+      "job_title": "ML Engineer",
+      "company": "Future Labs",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Node.js",
+        "NoSQL",
+        "AWS",
+        "PyTorch",
+        "Java",
+        "React",
+        "Docker"
+      ],
+      "explanation": "This candidate is not a good match for the ML Engineer position as they lack the required technical skills and relevant experience in machine learning technologies. Their extensive background in information assurance and systems engineering does not align with the specific requirements of this role."
+    },
+    {
+      "job_id": "job_071",
+      "job_title": "ML Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "CI/CD",
+        "TensorFlow",
+        "Python"
+      ],
+      "explanation": "This candidate does not possess any of the required technical skills for the ML Engineer position, nor do they have relevant experience in machine learning or the specified programming languages. Therefore, they are not a suitable match for this role."
+    },
+    {
+      "job_id": "job_097",
+      "job_title": "AI Researcher",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "AWS",
+        "Docker",
+        "CI/CD"
+      ],
+      "explanation": "This candidate does not match the job requirements for the AI Researcher position, as they lack the necessary technical skills in AWS, Docker, and CI/CD, and do not have the required 8+ years of relevant experience."
+    },
+    {
+      "job_id": "job_059",
+      "job_title": "DevOps Engineer",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "AWS",
+        "SQL",
+        "NoSQL"
+      ],
+      "explanation": "This candidate does not possess the required technical skills or relevant experience for the DevOps Engineer position, as they lack expertise in AWS, SQL, and NoSQL, and have not worked in a DevOps capacity."
+    }
+  ]
+}

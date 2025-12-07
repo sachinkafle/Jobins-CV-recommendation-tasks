@@ -1,0 +1,42 @@
+# Core Dependencies
+langchain
+langchain-openai
+langchain-community
+langchain-postgres
+langgraph
+
+# Vector Store & Database
+pgvector
+psycopg2-binary
+sqlalchemy
+
+# Document Processing
+pypdf
+pdfplumber
+
+# Data Science
+numpy
+pandas
+scikit-learn
+
+# Validation
+pydantic
+
+# Async & Performance
+asyncio
+aiofiles
+
+# Configuration
+python-dotenv
+pyyaml
+
+# Monitoring
+prometheus-client
+
+# Testing
+pytest
+pytest-asyncio
+
+# Utilities
+tqdm
+rich

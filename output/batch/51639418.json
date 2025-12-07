@@ -1,0 +1,224 @@
+{
+  "candidate_id": "51639418",
+  "candidate_name": "Information Technology Bureau Deputy Director",
+  "recommendations": [
+    {
+      "job_id": "job_020",
+      "job_title": "AI Researcher",
+      "company": "StartupXYZ",
+      "match_score": 0.4,
+      "matching_factors": {
+        "skills_match": 0.4,
+        "experience_match": 0.5,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "AWS",
+        "Node.js",
+        "Python",
+        "Java",
+        "React"
+      ],
+      "explanation": "The candidate has strong experience in IT management and some relevant skills like SQL, but lacks the specific programming languages and technologies required for the AI Researcher position. Additionally, their educational background does not align with the technical focus of the role."
+    },
+    {
+      "job_id": "job_039",
+      "job_title": "Backend Developer",
+      "company": "StartupXYZ",
+      "match_score": 0.32,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.5,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Docker",
+        "Java",
+        "NoSQL",
+        "TensorFlow",
+        "JavaScript"
+      ],
+      "explanation": "The candidate has strong experience in IT management and possesses SQL skills, but lacks the specific technical skills required for the Backend Developer position, such as Docker, Java, NoSQL, TensorFlow, and JavaScript. Additionally, the candidate's educational background does not align with the technical focus of the role."
+    },
+    {
+      "job_id": "job_087",
+      "job_title": "DevOps Engineer",
+      "company": "Enterprise Tech",
+      "match_score": 0.32,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.5,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "CI/CD",
+        "Docker",
+        "Java",
+        "AWS",
+        "Python",
+        "TensorFlow"
+      ],
+      "explanation": "The candidate has a strong background in IT management and SQL, but lacks key DevOps skills such as CI/CD, Docker, and AWS, which are critical for the role. Additionally, the candidate's education does not align with the technical requirements of the position."
+    },
+    {
+      "job_id": "job_067",
+      "job_title": "Senior Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.32,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.5,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "React",
+        "Docker",
+        "Kubernetes",
+        "JavaScript"
+      ],
+      "explanation": "The candidate has extensive experience in IT management and possesses SQL skills, but lacks the specific technical skills required for the Senior Engineer position, such as React, Docker, Kubernetes, and JavaScript. Additionally, the candidate's educational background does not align with the technical focus of the role."
+    },
+    {
+      "job_id": "job_003",
+      "job_title": "Senior Engineer",
+      "company": "Future Labs",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Python",
+        "NoSQL",
+        "Git"
+      ],
+      "explanation": "The candidate has strong experience in IT management and possesses SQL skills, but lacks the specific technical skills required for the Senior Engineer position, such as Python, NoSQL, and Git. Additionally, the candidate's extensive experience does not align with the 4+ years of direct engineering experience specified in the job description."
+    },
+    {
+      "job_id": "job_059",
+      "job_title": "DevOps Engineer",
+      "company": "Tech Corp",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "AWS",
+        "NoSQL"
+      ],
+      "explanation": "The candidate has strong SQL skills, which align with the job requirements, but lacks experience with AWS and NoSQL technologies. Additionally, the candidate does not meet the required 6+ years of relevant experience in a DevOps role, making this a poor match overall."
+    },
+    {
+      "job_id": "job_064",
+      "job_title": "Senior Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "AWS",
+        "CI/CD",
+        "Docker"
+      ],
+      "explanation": "This candidate does not match the job requirements as they lack the necessary technical skills in Java, AWS, CI/CD, and Docker, and their experience does not align with the specific requirements of the Senior Engineer role."
+    },
+    {
+      "job_id": "job_097",
+      "job_title": "AI Researcher",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "AWS",
+        "Docker",
+        "CI/CD"
+      ],
+      "explanation": "This candidate does not match the job requirements for the AI Researcher position, as they lack the necessary technical skills in AWS, Docker, and CI/CD, and do not have the relevant experience in AI research."
+    },
+    {
+      "job_id": "job_081",
+      "job_title": "Senior Engineer",
+      "company": "Tech Corp",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Docker",
+        "JavaScript",
+        "Node.js",
+        "NoSQL",
+        "Python",
+        "AWS"
+      ],
+      "explanation": "This candidate does not possess any of the required technical skills for the Senior Engineer position, nor do they have the relevant experience in the specified technologies. Their extensive IT management experience does not align with the hands-on engineering focus of the role."
+    },
+    {
+      "job_id": "job_100",
+      "job_title": "Backend Developer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "Java",
+        "NoSQL",
+        "Python",
+        "PyTorch",
+        "AWS",
+        "CI/CD"
+      ],
+      "explanation": "This candidate does not possess any of the required technical skills for the Backend Developer position, nor do they have relevant experience in backend development. Their extensive IT management experience does not align with the specific requirements of this role."
+    }
+  ]
+}

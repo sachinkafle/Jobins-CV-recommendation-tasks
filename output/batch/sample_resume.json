@@ -1,0 +1,227 @@
+{
+  "candidate_id": "sample_resume",
+  "candidate_name": "Sachin Kafle",
+  "recommendations": [
+    {
+      "job_id": "job_071",
+      "job_title": "ML Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.64,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.5,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "Python"
+      ],
+      "missing_skills": [
+        "Java",
+        "CI/CD",
+        "TensorFlow"
+      ],
+      "explanation": "Sachin has a strong educational background and relevant skills in Python, but lacks key required skills such as Java, CI/CD, and TensorFlow, as well as the 4+ years of experience specified in the job description."
+    },
+    {
+      "job_id": "job_063",
+      "job_title": "ML Engineer",
+      "company": "Cloud Solutions",
+      "match_score": 0.64,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.5,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "Python",
+        "AWS",
+        "NoSQL"
+      ],
+      "missing_skills": [
+        "Docker",
+        "TensorFlow",
+        "React",
+        "CI/CD"
+      ],
+      "explanation": "Sachin has a strong educational background and relevant skills in Python, AWS, and NoSQL, but lacks key required skills such as Docker, TensorFlow, and React, as well as the 6+ years of experience needed for the role."
+    },
+    {
+      "job_id": "job_083",
+      "job_title": "ML Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.59,
+      "matching_factors": {
+        "skills_match": 0.4,
+        "experience_match": 0.5,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "Python"
+      ],
+      "missing_skills": [
+        "Kubernetes",
+        "JavaScript",
+        "CI/CD",
+        "TensorFlow"
+      ],
+      "explanation": "Sachin has a strong educational background and relevant skills in Python, but lacks several key technical skills such as Kubernetes, JavaScript, CI/CD, and TensorFlow, which are critical for the ML Engineer position. Additionally, his experience falls short of the required 6+ years."
+    },
+    {
+      "job_id": "job_045",
+      "job_title": "ML Engineer",
+      "company": "Cloud Solutions",
+      "match_score": 0.59,
+      "matching_factors": {
+        "skills_match": 0.4,
+        "experience_match": 0.5,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "Python",
+        "AWS"
+      ],
+      "missing_skills": [
+        "Node.js",
+        "SQL",
+        "Docker",
+        "Git"
+      ],
+      "explanation": "Sachin has a strong educational background and relevant skills in Python and AWS, but lacks key required skills such as Node.js, SQL, and Docker, and does not meet the 6+ years of experience requirement, making this a moderate match."
+    },
+    {
+      "job_id": "job_072",
+      "job_title": "ML Engineer",
+      "company": "StartupXYZ",
+      "match_score": 0.53,
+      "matching_factors": {
+        "skills_match": 0.28,
+        "experience_match": 0.43,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "AWS",
+        "Python"
+      ],
+      "missing_skills": [
+        "SQL",
+        "PyTorch",
+        "Kubernetes",
+        "CI/CD",
+        "TensorFlow"
+      ],
+      "explanation": "Sachin has a strong educational background and some relevant skills in AWS and Python, but lacks several key technical skills and the required years of experience for the ML Engineer position."
+    },
+    {
+      "job_id": "job_073",
+      "job_title": "ML Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.49,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.67,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Node.js",
+        "SQL",
+        "AWS"
+      ],
+      "explanation": "While Sachin has a strong educational background and relevant experience in machine learning, he lacks the specific technical skills in Node.js and SQL required for the position. His experience aligns well with the role, but the missing skills significantly impact the overall match."
+    },
+    {
+      "job_id": "job_098",
+      "job_title": "ML Engineer",
+      "company": "Future Labs",
+      "match_score": 0.42,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.3,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "AWS",
+        "NoSQL"
+      ],
+      "missing_skills": [
+        "Node.js",
+        "PyTorch",
+        "Java",
+        "React",
+        "Docker",
+        "7+ years experience"
+      ],
+      "explanation": "Sachin has a strong educational background and some relevant skills in AWS and NoSQL, but lacks key technical skills such as Node.js, PyTorch, Java, React, and Docker, as well as the required 7+ years of experience, making this a less than ideal match."
+    },
+    {
+      "job_id": "job_037",
+      "job_title": "ML Engineer",
+      "company": "Digital Dynamics",
+      "match_score": 0.4,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.5,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Kubernetes",
+        "React",
+        "TensorFlow",
+        "JavaScript",
+        "Java",
+        "NoSQL",
+        "Node.js"
+      ],
+      "explanation": "While Sachin has a strong background in machine learning and data science, he lacks the specific technical skills required for this ML Engineer position, particularly in Kubernetes, React, and TensorFlow. His experience is relevant but does not fully meet the 4+ years requirement."
+    },
+    {
+      "job_id": "job_068",
+      "job_title": "ML Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "Python"
+      ],
+      "missing_skills": [
+        "React",
+        "NoSQL",
+        "8+ years experience"
+      ],
+      "explanation": "Sachin has strong skills in Python and relevant experience in machine learning, but he lacks the required skills in React and NoSQL, as well as the 8+ years of experience needed for the role."
+    },
+    {
+      "job_id": "job_004",
+      "job_title": "ML Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.29,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "NoSQL",
+        "CI/CD"
+      ],
+      "explanation": "This candidate does not meet the technical skill requirements for the ML Engineer position, particularly lacking in Java, NoSQL, and CI/CD. However, they possess a relevant educational background with a Master’s in Data Science."
+    }
+  ]
+}

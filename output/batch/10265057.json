@@ -1,0 +1,53 @@
+{
+  "candidate_id": "10265057",
+  "candidate_name": "Unknown",
+  "recommendations": [
+    {
+      "job_id": "job_045",
+      "job_title": "ML Engineer",
+      "company": "Cloud Solutions",
+      "match_score": 0.72,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.8,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL",
+        "Python"
+      ],
+      "missing_skills": [
+        "Node.js",
+        "Docker",
+        "Git",
+        "AWS"
+      ],
+      "explanation": "The candidate has a strong educational background in Electrical and Computer Engineering and over 6 years of relevant experience, which aligns well with the job's experience requirement. However, while they possess skills in SQL and Python, they lack several key technical skills such as Node.js, Docker, Git, and AWS, which are crucial for the ML Engineer role."
+    },
+    {
+      "job_id": "job_072",
+      "job_title": "ML Engineer",
+      "company": "StartupXYZ",
+      "match_score": 0.62,
+      "matching_factors": {
+        "skills_match": 0.25,
+        "experience_match": 0.8,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL",
+        "Python"
+      ],
+      "missing_skills": [
+        "PyTorch",
+        "Kubernetes",
+        "AWS",
+        "CI/CD",
+        "TensorFlow"
+      ],
+      "explanation": "The candidate has a strong educational background in Electrical and Computer Engineering and over 7 years of relevant experience, which aligns well with the experience requirement. However, the candidate lacks several key skills specific to machine learning engineering, such as PyTorch, Kubernetes, AWS, CI/CD, and TensorFlow, which are critical for the role."
+    }
+  ]
+}

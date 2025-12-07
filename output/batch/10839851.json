@@ -1,0 +1,47 @@
+{
+  "candidate_id": "10839851",
+  "candidate_name": "Information Technology Specialist",
+  "recommendations": [
+    {
+      "job_id": "job_064",
+      "job_title": "Senior Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.23,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.5,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "AWS",
+        "CI/CD",
+        "Docker"
+      ],
+      "explanation": "The candidate lacks the specific technical skills required for the Senior Engineer position, such as Java, AWS, CI/CD, and Docker. While they have over 7 years of experience in IT roles, the experience is not directly relevant to the job's focus on software engineering and cloud technologies."
+    },
+    {
+      "job_id": "job_078",
+      "job_title": "DevOps Engineer",
+      "company": "Tech Corp",
+      "match_score": 0.23,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.5,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "Node.js",
+        "Git",
+        "Python",
+        "AWS"
+      ],
+      "explanation": "The candidate has a strong background in IT support and network management but lacks the specific DevOps skills required for the position, such as JavaScript, Node.js, Git, Python, and AWS. While the candidate has over 6 years of experience in IT, it does not align with the DevOps focus of the job."
+    }
+  ]
+}

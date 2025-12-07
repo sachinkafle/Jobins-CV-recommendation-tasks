@@ -1,0 +1,224 @@
+{
+  "candidate_id": "36434348",
+  "candidate_name": "Information Technology Manager",
+  "recommendations": [
+    {
+      "job_id": "job_003",
+      "job_title": "Senior Engineer",
+      "company": "Future Labs",
+      "match_score": 0.71,
+      "matching_factors": {
+        "skills_match": 0.5,
+        "experience_match": 0.75,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Python",
+        "NoSQL",
+        "Git"
+      ],
+      "explanation": "The candidate has a strong educational background and relevant experience, particularly in SQL, but lacks key technical skills such as Python, NoSQL, and Git that are essential for the Senior Engineer role."
+    },
+    {
+      "job_id": "job_022",
+      "job_title": "Product Manager",
+      "company": "Tech Corp",
+      "match_score": 0.65,
+      "matching_factors": {
+        "skills_match": 0.28,
+        "experience_match": 0.83,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Git",
+        "TensorFlow",
+        "Node.js",
+        "React",
+        "CI/CD",
+        "AWS"
+      ],
+      "explanation": "The candidate has a strong background in IT management and relevant experience, but lacks several key technical skills required for the Product Manager role, particularly in modern development tools and frameworks."
+    },
+    {
+      "job_id": "job_008",
+      "job_title": "Product Manager",
+      "company": "Future Labs",
+      "match_score": 0.58,
+      "matching_factors": {
+        "skills_match": 0.28,
+        "experience_match": 0.6,
+        "education_match": 1.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "TensorFlow",
+        "Java",
+        "JavaScript",
+        "Node.js",
+        "AWS",
+        "CI/CD"
+      ],
+      "explanation": "The candidate has a strong educational background and relevant experience in IT management, but lacks key technical skills required for the Product Manager role, particularly in programming languages and cloud technologies."
+    },
+    {
+      "job_id": "job_031",
+      "job_title": "Product Manager",
+      "company": "Future Labs",
+      "match_score": 0.54,
+      "matching_factors": {
+        "skills_match": 0.28,
+        "experience_match": 0.6,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Java",
+        "Node.js",
+        "Python",
+        "JavaScript",
+        "Git",
+        "Docker"
+      ],
+      "explanation": "The candidate has a solid background in IT management and relevant experience, but lacks key technical skills required for the Product Manager role, particularly in programming languages and tools like Java, Node.js, and Docker."
+    },
+    {
+      "job_id": "job_032",
+      "job_title": "Product Manager",
+      "company": "Digital Dynamics",
+      "match_score": 0.48,
+      "matching_factors": {
+        "skills_match": 0.2,
+        "experience_match": 0.5,
+        "education_match": 0.8,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Python",
+        "CI/CD",
+        "Node.js"
+      ],
+      "explanation": "The candidate has strong experience in IT management and relevant education, but lacks key technical skills such as JavaScript, Python, CI/CD, and Node.js that are critical for the Product Manager role."
+    },
+    {
+      "job_id": "job_073",
+      "job_title": "ML Engineer",
+      "company": "AI Innovations",
+      "match_score": 0.22,
+      "matching_factors": {
+        "skills_match": 0.33,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [
+        "SQL"
+      ],
+      "missing_skills": [
+        "Node.js",
+        "AWS"
+      ],
+      "explanation": "The candidate has strong SQL skills, which partially align with the job requirements, but lacks the necessary experience with Node.js and AWS, and does not meet the 3+ years of relevant experience for the ML Engineer role."
+    },
+    {
+      "job_id": "job_052",
+      "job_title": "Product Manager",
+      "company": "Enterprise Tech",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "TensorFlow",
+        "Java",
+        "Node.js",
+        "CI/CD",
+        "AWS"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and relevant experience in product management. Their background is primarily in IT management and support rather than product development."
+    },
+    {
+      "job_id": "job_088",
+      "job_title": "Product Manager",
+      "company": "Cloud Solutions",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Git",
+        "Kubernetes",
+        "TensorFlow",
+        "AWS",
+        "Node.js",
+        "Java"
+      ],
+      "explanation": "This candidate is not a good match for the Product Manager position as they lack the required technical skills and experience in relevant technologies. Their background is more aligned with IT management rather than product management."
+    },
+    {
+      "job_id": "job_004",
+      "job_title": "ML Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "NoSQL",
+        "CI/CD"
+      ],
+      "explanation": "This candidate is not a good match for the ML Engineer position as they lack the required technical skills in Java, NoSQL, and CI/CD, and their experience does not align with the specific requirements of the role."
+    },
+    {
+      "job_id": "job_064",
+      "job_title": "Senior Engineer",
+      "company": "Data Systems Inc",
+      "match_score": 0.09,
+      "matching_factors": {
+        "skills_match": 0.0,
+        "experience_match": 0.0,
+        "education_match": 0.0,
+        "semantic_similarity": 0.85
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "Java",
+        "AWS",
+        "CI/CD",
+        "Docker"
+      ],
+      "explanation": "This candidate does not match the job requirements as they lack the necessary technical skills in Java, AWS, CI/CD, and Docker, and their experience does not align with the specific requirements of a Senior Engineer role."
+    }
+  ]
+}
