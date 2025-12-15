@@ -1,0 +1,28 @@
+{
+  "total_samples": 10,
+  "total_time_sec": 268.47,
+  "quality_metrics": {
+    "precision@5": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "recall@5": {
+      "mean": 0.025,
+      "std": 0.0
+    },
+    "f1_score": {
+      "mean": 0.0488,
+      "std": 0.0
+    },
+    "ndcg@5": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  "performance_metrics": {
+    "avg_latency_sec": 26.8458,
+    "p50_latency_sec": 26.0596,
+    "p95_latency_sec": 32.0738,
+    "throughput_req_per_sec": 0.04
+  }
+}

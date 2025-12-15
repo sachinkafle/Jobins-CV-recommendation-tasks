@@ -25,17 +25,28 @@ class EvalResult:
 
 class SyntheticDataGenerator:
     """Generate synthetic ground truth"""
-
+    
     @staticmethod
-    def generate_ground_truth(num_candidates: int, num_jobs: int) -> Dict[str, Set[str]]:
-        """Create synthetic relevance labels"""
+    def generate_realistic_ground_truth(num_candidates: int, num_jobs: int) -> Dict[str, Set[str]]:
+        """Create broader ground truth"""
         ground_truth = {}
+        
         for i in range(num_candidates):
             cand_id = f"candidate_{i}"
-            # Each candidate matches 3-7 random jobs
-            relevant = {f"job_{str(random.randint(1, num_jobs)).zfill(3)}" for _ in range(random.randint(3, 7))}
+            profile_type = i % 5  # 0-4 for your 5 job types
+            
+            # Mark ALL jobs of matching type as relevant (not just top 5)
+            relevant = set()
+            for j in range(num_jobs):
+                if j % 5 == profile_type:  # Every 5th job matches
+                    relevant.add(f"job_{str(j+1).zfill(3)}")
+            
+            # Now relevant set has ~200 jobs for 1000 job database
             ground_truth[cand_id] = relevant
+        
         return ground_truth
+
+
 
 
 class RecommendationEvaluator:
