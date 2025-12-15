@@ -43,7 +43,7 @@ def main():
 
     # Optimize database
     console.print("[yellow]Optimizing database...[/yellow]")
-    db_manager.optimize_database()
+    # db_manager.optimize_database()
 
     # Example: Parse a CV
     sample_cv_path = "data/sample_cvs/sample_resume.pdf"

@@ -3,7 +3,7 @@ import time
 from typing import List, Dict, Optional
 from functools import lru_cache
 import hashlib
-from langchain_postgres import PGVector
+from langchain_community.vectorstores.pgvector import PGVector
 from langchain_openai import OpenAIEmbeddings
 from sqlalchemy import create_engine, text, pool
 from sqlalchemy.orm import sessionmaker
@@ -71,7 +71,6 @@ class PerformanceMetrics:
             "total_searches": len(self.search_times)
         }
 
-
 class OptimizedDatabaseManager:
     """Database manager with performance optimizations"""
     
@@ -80,25 +79,21 @@ class OptimizedDatabaseManager:
         self.engine = create_engine(
             config.database_url,
             poolclass=pool.QueuePool,
-            pool_size=20,  # Max 20 concurrent connections
-            max_overflow=10,  # Allow 10 additional connections
-            pool_pre_ping=True,  # Verify connections before use
-            pool_recycle=3600,  # Recycle connections after 1 hour
+            pool_size=20,
+            max_overflow=10,
+            pool_pre_ping=True,
+            pool_recycle=3600,
             echo=False
         )
         
         self.Session = sessionmaker(bind=self.engine)
         self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
         
-        # Initialize vector store with HNSW index for fast search
-        self.vector_store = PGVector(
-            embeddings=self.embeddings,
-            collection_name="job_postings",
-            connection=config.database_url,
-            use_jsonb=True
-        )
+        # IMPORTANT: Don't initialize vector_store here!
+        # It will be created on-demand to avoid schema conflicts
+        self._vector_store = None
         
-        # Redis cache for embeddings and search results
+        # Redis cache
         try:
             self.cache = redis.Redis(
                 host='localhost',
@@ -116,168 +111,192 @@ class OptimizedDatabaseManager:
             logger.warning("Redis not available, caching disabled")
         
         self.metrics = PerformanceMetrics()
-        
-        # Create optimized indexes
-        self._create_indexes()
     
-    def _create_indexes(self):
-        """Create database indexes for performance"""
-        with self.engine.connect() as conn:
-            try:
-                # First, ensure pgvector extension is installed
-                conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector;"))
-                conn.commit()
-                
-                # Check if the table exists
-                result = conn.execute(text("""
-                    SELECT EXISTS (
-                        SELECT FROM information_schema.tables 
-                        WHERE table_name = 'langchain_pg_embedding'
-                    );
-                """))
-                
-                table_exists = result.scalar()
-                
-                if not table_exists:
-                    logger.info("langchain_pg_embedding table doesn't exist yet, skipping index creation")
-                    return
-                
-                # Check if embedding column has data
-                result = conn.execute(text("""
-                    SELECT COUNT(*) FROM langchain_pg_embedding;
-                """))
-                
-                count = result.scalar()
-                
-                if count == 0:
-                    logger.info("No embeddings in database yet, skipping HNSW index")
-                    return
-                
-                logger.info(f"Creating indexes on {count} embeddings...")
-                
-                # Try to create HNSW index (requires pgvector extension)
-                try:
-                    conn.execute(text("""
-                        CREATE INDEX IF NOT EXISTS idx_job_embeddings_hnsw 
-                        ON langchain_pg_embedding 
-                        USING hnsw (embedding vector_cosine_ops)
-                        WITH (m = 16, ef_construction = 64);
-                    """))
-                    logger.info("HNSW index created successfully")
-                except Exception as e:
-                    logger.warning(f"HNSW index creation failed (will use slower search): {e}")
-                    # Fallback: try IVFFlat index
-                    try:
-                        conn.execute(text("""
-                            CREATE INDEX IF NOT EXISTS idx_job_embeddings_ivfflat 
-                            ON langchain_pg_embedding 
-                            USING ivfflat (embedding vector_cosine_ops)
-                            WITH (lists = 100);
-                        """))
-                        logger.info("IVFFlat index created as fallback")
-                    except Exception as e2:
-                        logger.warning(f"IVFFlat index also failed: {e2}")
-                
-                # B-tree index for metadata filtering (safe to create anytime)
-                conn.execute(text("""
-                    CREATE INDEX IF NOT EXISTS idx_job_metadata 
-                    ON langchain_pg_embedding 
-                    USING gin (cmetadata jsonb_path_ops);
-                """))
-                
-                conn.commit()
-                logger.info("Database indexes setup complete")
-                
-            except Exception as e:
-                logger.error(f"Index creation error: {e}")
-                conn.rollback()
-
+    # @property
+    # def vector_store(self):
+    #     """Lazy initialization of vector store"""
+    #     if self._vector_store is None:
+    #         self._vector_store = PGVector(
+    #             embedding_function=self.embeddings,
+    #             collection_name="job_postings",
+    #             connection_string=config.database_url,
+    #             use_jsonb=True
+    #         )
+    #     return self._vector_store
     
-    def _cache_key(self, text: str) -> str:
-        """Generate cache key from text"""
-        return f"emb:{hashlib.md5(text.encode()).hexdigest()}"
-    
-    def _get_cached_embedding(self, text: str) -> Optional[List[float]]:
-        """Get embedding from cache"""
-        if not self.cache_enabled:
-            return None
-        
-        key = self._cache_key(text)
-        try:
-            cached = self.cache.get(key)
-            if cached:
-                self.metrics.cache_hits += 1
-                return pickle.loads(cached)
-        except Exception as e:
-            logger.warning(f"Cache read error: {e}")
-        
-        self.metrics.cache_misses += 1
-        return None
-    
-    def _set_cached_embedding(self, text: str, embedding: List[float]):
-        """Store embedding in cache"""
-        if not self.cache_enabled:
-            return
-        
-        key = self._cache_key(text)
-        try:
-            self.cache.setex(
-                key,
-                3600,  # 1 hour TTL
-                pickle.dumps(embedding)
+    @property
+    def vector_store(self):
+        """Lazy initialization of vector store"""
+        if self._vector_store is None:
+            self._vector_store = PGVector(
+                embedding_function=self.embeddings,  
+                collection_name="job_postings",
+                connection_string=config.database_url,
+                use_jsonb=True
             )
-        except Exception as e:
-            logger.warning(f"Cache write error: {e}")
+        return self._vector_store
     
-    def get_embedding(self, text: str) -> List[float]:
-        """Get embedding with caching"""
-        # Check cache first
-        cached = self._get_cached_embedding(text)
-        if cached:
-            return cached
-        
-        # Generate new embedding
-        embedding = self.embeddings.embed_query(text)
-        
-        # Cache it
-        self._set_cached_embedding(text, embedding)
-        
-        return embedding
-    
-    def search_similar_jobs(
-        self, 
-        query: str, 
-        k: int = 10,
-        filter_metadata: Optional[Dict] = None
-    ) -> List[Dict]:
-        """Optimized vector similarity search"""
-        start_time = time.time()
-        
+    def search_similar_jobs(self, query: str, k: int = 10, filters: Dict = None) -> List[Dict]:
+        """Search for similar jobs using direct SQL to ensure index usage"""
         try:
-            # Use vector store's optimized search
-            results = self.vector_store.similarity_search_with_score(
-                query,
-                k=k,
-                filter=filter_metadata
-            )
+            start_time = time.time()
             
-            # Convert to dict format
+            # Generate embedding for query
+            query_embedding = self.embeddings.embed_query(query)
+            embedding_str = '[' + ','.join(map(str, query_embedding)) + ']'
+            
+            # Direct SQL query that WILL use the HNSW index
+            sql = f"""
+                SELECT 
+                    uuid,
+                    document,
+                    cmetadata,
+                    embedding <=> '{embedding_str}'::vector(1536) AS distance
+                FROM langchain_pg_embedding
+                WHERE collection_id = (
+                    SELECT uuid FROM langchain_pg_collection 
+                    WHERE name = 'job_postings' 
+                    LIMIT 1
+                )
+                ORDER BY embedding <=> '{embedding_str}'::vector(1536)
+                LIMIT {k};
+            """
+            
+            with self.engine.connect() as conn:
+                result = conn.execute(text(sql))
+                rows = result.fetchall()
+            
+            # Format results
             jobs = []
-            for doc, score in results:
-                job_data = doc.metadata.copy()
-                job_data['similarity_score'] = float(score)
-                job_data['description'] = doc.page_content
-                jobs.append(job_data)
+            for row in rows:
+                # Check if metadata is already a dict or needs parsing
+                metadata = row[2]
+                if isinstance(metadata, str):
+                    import json
+                    metadata = json.loads(metadata)
+                
+                job = {
+                    'job_id': metadata.get('job_id', 'unknown'),
+                    'title': metadata.get('title', 'Unknown Title'),
+                    'company': metadata.get('company', 'Unknown Company'),
+                    'requirements': metadata.get('requirements', ''),
+                    'content': row[1],  # document
+                    'similarity_score': float(1 - row[3])  # 1 - distance
+                }
+                jobs.append(job)
             
             search_time = time.time() - start_time
             self.metrics.add_search_time(search_time)
             
-            logger.info(f"Search completed in {search_time:.3f}s")
             return jobs
             
         except Exception as e:
             logger.error(f"Search error: {e}")
+            import traceback
+            logger.error(traceback.format_exc())
             return []
+
+
+
+    def verify_index_usage(self) -> Dict:
+        """Verify HNSW index is being used"""
+        try:
+            # Generate test embedding
+            test_embedding = self.embeddings.embed_query("Python Machine Learning")
+            embedding_str = '[' + ','.join(map(str, test_embedding)) + ']'
+            
+            # Check query plan
+            sql = f"""
+                EXPLAIN (ANALYZE, BUFFERS)
+                SELECT 
+                    uuid,
+                    embedding <=> '{embedding_str}'::vector(1536) AS distance
+                FROM langchain_pg_embedding
+                WHERE collection_id = (
+                    SELECT uuid FROM langchain_pg_collection 
+                    WHERE name = 'job_postings' 
+                    LIMIT 1
+                )
+                ORDER BY embedding <=> '{embedding_str}'::vector(1536)
+                LIMIT 10;
+            """
+            
+            with self.engine.connect() as conn:
+                result = conn.execute(text(sql))
+                plan_lines = [row[0] for row in result]
+            
+            plan_text = '\n'.join(plan_lines)
+            using_hnsw = 'idx_job_embeddings_hnsw' in plan_text.lower()
+            using_seqscan = 'seq scan' in plan_text.lower()
+            
+            logger.info("="*70)
+            logger.info("INDEX USAGE VERIFICATION")
+            logger.info("="*70)
+            
+            if using_hnsw:
+                logger.info("✓ HNSW index IS being used!")
+            elif using_seqscan:
+                logger.warning("✗ Sequential scan detected (index NOT used)")
+            else:
+                logger.info("? Unknown - check plan manually")
+            
+            logger.info("\nQuery Plan:")
+            logger.info(plan_text)
+            logger.info("="*70)
+            
+            return {
+                'using_hnsw': using_hnsw,
+                'using_seqscan': using_seqscan,
+                'plan': plan_text
+            }
+            
+        except Exception as e:
+            logger.error(f"Error verifying index: {e}")
+            return {'error': str(e)}
+
+
+
+    # def check_index_usage(self) -> Dict:
+    #     """Check if IVFFlat index is being used"""
+    #     try:
+    #         # Generate a test embedding
+    #         test_query = "Python Machine Learning Engineer"
+    #         query_embedding = self.embeddings.embed_query(test_query)
+    #         embedding_str = '[' + ','.join(map(str, query_embedding)) + ']'
+            
+    #         with self.engine.connect() as conn:
+    #             result = conn.execute(text(f"""
+    #                 EXPLAIN 
+    #                 SELECT uuid, 
+    #                     embedding <=> '{embedding_str}'::vector(1536) AS distance
+    #                 FROM langchain_pg_embedding
+    #                 ORDER BY distance
+    #                 LIMIT 5;
+    #             """))
+                
+    #             using_ivfflat = False
+    #             using_seqscan = False
+    #             plan_lines = []
+                
+    #             for row in result:
+    #                 plan_line = row[0]
+    #                 plan_lines.append(plan_line)
+                    
+    #                 if 'idx_job_embeddings_ivfflat' in plan_line.lower():
+    #                     using_ivfflat = True
+    #                 if 'seq scan' in plan_line.lower():
+    #                     using_seqscan = True
+                
+    #             return {
+    #                 'using_ivfflat': using_ivfflat,
+    #                 'using_seqscan': using_seqscan,
+    #                 'plan': '\n'.join(plan_lines)
+    #             }
+                
+    #     except Exception as e:
+    #         logger.error(f"Error checking index: {e}")
+    #         return {'error': str(e)}
+
     
     def batch_add_jobs(self, jobs: List[Dict], batch_size: int = 100):
         """Add jobs in batches for efficiency"""
@@ -328,6 +347,26 @@ class OptimizedDatabaseManager:
     def reset_metrics(self):
         """Reset performance metrics"""
         self.metrics.reset()
+
+    def optimize_database(self):
+        """Run database optimization tasks"""
+        logger.info("Optimizing database...")
+        
+        try:
+            with self.engine.connect() as conn:
+                # Analyze tables for query planner
+                conn.execute(text("ANALYZE langchain_pg_embedding;"))
+                conn.commit()
+                logger.info("✓ Database statistics updated")
+            
+            # Create indexes if they don't exist yet
+            self._create_indexes()
+            
+            logger.info("✓ Database optimization complete")
+            
+        except Exception as e:
+            logger.warning(f"Database optimization warning: {e}")
+
 
 
 # Global instance
