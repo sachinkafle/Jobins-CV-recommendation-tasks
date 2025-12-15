@@ -121,13 +121,13 @@ def fix_column_type_and_create_indexes():
     logger.info("Fixing vector column type and creating indexes...")
     
     try:
-        # Step 1: Check data count
+        
         with engine.connect() as conn:
             result = conn.execute(text("SELECT COUNT(*) FROM langchain_pg_embedding;"))
             count = result.scalar()
             logger.info(f"Found {count} embeddings")
         
-        # Step 2: Fix column type to vector(1536)
+        
         logger.info("Setting embedding column to vector(1536)...")
         with engine.connect() as conn:
             conn.execute(text("""
@@ -135,9 +135,9 @@ def fix_column_type_and_create_indexes():
                 ALTER COLUMN embedding TYPE vector(1536);
             """))
             conn.commit()
-            logger.info("✓ Column type updated to vector(1536)")
+            logger.info("Column type updated to vector(1536)")
         
-        # Step 3: Create HNSW index (better for <100k rows)
+        #  Create HNSW index (better for <100k rows)
         logger.info("Creating HNSW vector index...")
         with engine.connect() as conn:
             # HNSW parameters:
@@ -150,9 +150,9 @@ def fix_column_type_and_create_indexes():
                 WITH (m = 16, ef_construction = 64);
             """))
             conn.commit()
-            logger.info("✓ HNSW vector index created (m=16, ef_construction=64)")
+            logger.info("HNSW vector index created (m=16, ef_construction=64)")
         
-        # Step 4: Create metadata index
+        
         logger.info("Creating metadata index...")
         with engine.connect() as conn:
             conn.execute(text("""
@@ -207,7 +207,7 @@ def configure_database_for_hnsw():
             conn.execute(text("ANALYZE langchain_pg_embedding;"))
             
             conn.commit()
-            logger.info("✓ Configured: hnsw.ef_search=40")
+            logger.info("Configured: hnsw.ef_search=40")
             
     except Exception as e:
         logger.error(f"Configuration failed: {e}")
@@ -216,41 +216,41 @@ def configure_database_for_hnsw():
         engine.dispose()
 
 
-def configure_database_for_ivfflat():
-    """Configure database to prefer IVFFlat index"""
-    engine = create_engine(config.database_url)
+# def configure_database_for_ivfflat():
+#     """Configure database to prefer IVFFlat index"""
+#     engine = create_engine(config.database_url)
     
-    logger.info("Configuring database for IVFFlat index usage...")
+#     logger.info("Configuring database for IVFFlat index usage...")
     
-    try:
-        with engine.connect() as conn:
-            # Get row count to calculate optimal parameters
-            result = conn.execute(text("SELECT COUNT(*) FROM langchain_pg_embedding;"))
-            count = result.scalar()
+#     try:
+#         with engine.connect() as conn:
+#             # Get row count to calculate optimal parameters
+#             result = conn.execute(text("SELECT COUNT(*) FROM langchain_pg_embedding;"))
+#             count = result.scalar()
             
-            # Calculate optimal probes (lists/10 for < 1M rows)
-            lists = 10  # We created index with lists=10
-            probes = max(1, lists // 2)  # Use lists/2 for better recall
+#             # Calculate optimal probes (lists/10 for < 1M rows)
+#             lists = 10  # We created index with lists=10
+#             probes = max(1, lists // 2)  # Use lists/2 for better recall
             
-            # Set ivfflat.probes
-            conn.execute(text(f"ALTER DATABASE vectordb SET ivfflat.probes = {probes};"))
+#             # Set ivfflat.probes
+#             conn.execute(text(f"ALTER DATABASE vectordb SET ivfflat.probes = {probes};"))
             
-            # Adjust cost parameters to favor index
-            conn.execute(text("ALTER DATABASE vectordb SET random_page_cost = 1.1;"))
-            conn.execute(text("ALTER DATABASE vectordb SET seq_page_cost = 1.0;"))
-            conn.execute(text("ALTER DATABASE vectordb SET effective_cache_size = '2GB';"))
+#             # Adjust cost parameters to favor index
+#             conn.execute(text("ALTER DATABASE vectordb SET random_page_cost = 1.1;"))
+#             conn.execute(text("ALTER DATABASE vectordb SET seq_page_cost = 1.0;"))
+#             conn.execute(text("ALTER DATABASE vectordb SET effective_cache_size = '2GB';"))
             
-            # Update statistics
-            conn.execute(text("ANALYZE langchain_pg_embedding;"))
+#             # Update statistics
+#             conn.execute(text("ANALYZE langchain_pg_embedding;"))
             
-            conn.commit()
-            logger.info(f"✓ Configured: probes={probes}, optimized for {count} embeddings")
+#             conn.commit()
+#             logger.info(f"✓ Configured: probes={probes}, optimized for {count} embeddings")
             
-    except Exception as e:
-        logger.error(f"Configuration failed: {e}")
+#     except Exception as e:
+#         logger.error(f"Configuration failed: {e}")
     
-    finally:
-        engine.dispose()
+#     finally:
+#         engine.dispose()
 
 
 def main():
@@ -258,29 +258,29 @@ def main():
     logger.info("DATABASE INITIALIZATION")
     logger.info("="*70)
     
-    # Step 1: Clean database
+    
     clean_database()
     
-    # Step 2: Generate jobs (increase to 5000 for better demonstration)
+    
     logger.info("Generating sample job postings...")
     jobs = generate_sample_jobs(num_jobs=1000)  
-    logger.info(f"✓ Generated {len(jobs)} job postings")
+    logger.info(f"Generated {len(jobs)} job postings")
     
-    # Step 3: Add jobs
+    
     add_jobs_to_vectorstore(jobs)
     
-    # Step 4: Create HNSW indexes
+    
     success = fix_column_type_and_create_indexes()
     
-    # Step 5: Configure for HNSW
+    
     if success:
         configure_database_for_hnsw()
     
     logger.info("="*70)
     if success:
-        logger.info("✓ DATABASE INITIALIZATION COMPLETE WITH HNSW INDEX")
+        logger.info("DATABASE INITIALIZATION COMPLETE WITH HNSW INDEX")
     else:
-        logger.info("✓ DATABASE INITIALIZATION COMPLETE (without vector index)")
+        logger.info("DATABASE INITIALIZATION COMPLETE (without vector index)")
     logger.info("="*70)
 
 

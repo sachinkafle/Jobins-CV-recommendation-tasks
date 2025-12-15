@@ -89,8 +89,7 @@ class OptimizedDatabaseManager:
         self.Session = sessionmaker(bind=self.engine)
         self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
         
-        # IMPORTANT: Don't initialize vector_store here!
-        # It will be created on-demand to avoid schema conflicts
+        
         self._vector_store = None
         
         # Redis cache
@@ -357,12 +356,12 @@ class OptimizedDatabaseManager:
                 # Analyze tables for query planner
                 conn.execute(text("ANALYZE langchain_pg_embedding;"))
                 conn.commit()
-                logger.info("✓ Database statistics updated")
+                logger.info("Database statistics updated")
             
             # Create indexes if they don't exist yet
             self._create_indexes()
             
-            logger.info("✓ Database optimization complete")
+            logger.info(" Database optimization complete")
             
         except Exception as e:
             logger.warning(f"Database optimization warning: {e}")
