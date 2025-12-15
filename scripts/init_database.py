@@ -282,9 +282,7 @@ def main():
     else:
         logger.info("✓ DATABASE INITIALIZATION COMPLETE (without vector index)")
     logger.info("="*70)
-    logger.info("\nNext steps:")
-    logger.info("  1. Test performance: python scripts/test_search_performance.py")
-    logger.info("  2. Compare index vs no index: python scripts/benchmark_hnsw.py")
+
 
 
 if __name__ == "__main__":

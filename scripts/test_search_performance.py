@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """Test vector search performance"""
 import sys
 import time
