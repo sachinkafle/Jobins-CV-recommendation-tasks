@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Main entry point for CV-Job Matching System"""
 import asyncio
 from pathlib import Path
@@ -49,14 +48,14 @@ def main():
     sample_cv_path = "data/sample_cvs/sample_resume.pdf"
 
     if Path(sample_cv_path).exists():
-        console.print(f"\n[cyan]Parsing CV: {sample_cv_path}[/cyan]")
+        console.print(f"\nParsing CV: {sample_cv_path}")
         resume = parser.parse(sample_cv_path)
 
         if resume:
-            console.print(f"[green]✓[/green] Successfully parsed CV for {resume.basics.name}")
+            console.print(f"Successfully parsed CV for {resume.basics.name}")
 
             # Generate recommendations
-            console.print(f"\n[cyan]Generating job recommendations...[/cyan]")
+            console.print(f"\nGenerating job recommendations...")
             recommendations = matcher.match(resume, "demo_candidate")
 
                    # Print JSON to console
